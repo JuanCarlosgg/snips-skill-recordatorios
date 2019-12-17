@@ -63,7 +63,7 @@ def action_wrapper(hermes, intentMessage, conf):
     
     sentence = " "
     dias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
-    tipo = ["Medicina", "Paracetamol", "Ibuprofeno", "Aspirina", " ", " ", " ", "Médico", " ", "TV"]  
+    tipo = ["Medicina", "Paracetamol",  "Aspirina", "Ibuprofeno", " ", " ", " ", "Médico", " ", "TV"]  
     # The callback for when a PUBLISH message is received from the server.
     def on_message(client, userdata, msg):
         #print(msg.topic+" "+str(msg.payload))
