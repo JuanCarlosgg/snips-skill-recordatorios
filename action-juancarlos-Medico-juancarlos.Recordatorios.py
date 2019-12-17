@@ -54,7 +54,7 @@ def action_wrapper(hermes, intentMessage, conf):
             client.connect('localhost', 1883)        
             client.publish("/dsh/damaso/reminders/management", json.dumps({
                 "action": "ADD",
-                "hour": int(hour) -1,
+                "hour": int(hour),
                 "minute": int(minute),
                 "weekday": day,
                 "concept": 7
